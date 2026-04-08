@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fixtures & Results | Jamasi 1 Zongo Youth Sala Gala</title>
+  <link rel="stylesheet" href="./fixtures.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-area">
+      <div class="logo-circle">🏆</div>
+      <div>
+        <h1>Jamasi 1 Zongo Youth Sala Gala</h1>
+        <p class="tagline">Forge Your Victory</p>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <a href="./index.html">Home</a>
+      <a href="./teams.html">Teams</a>
+      <a href="./fixtures.html" class="active">Fixtures</a>
+      <a href="./standings.html">Standings</a>
+      <a href="./sponsers.html">Sponsors</a>
+      <a href="./admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="fixtures-hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge">Match Centre</span>
+      <h2>Fixtures & Match Results</h2>
+      <p>Track upcoming games, completed matches, and full match statistics.</p>
+    </div>
+  </section>
+
+  <!-- UPCOMING -->
+  <section class="fixtures-section">
+    <div class="section-title">
+      <h2>Upcoming Fixtures</h2>
+      <p>Matches scheduled to be played</p>
+    </div>
+
+    <div class="fixtures-grid" id="upcomingFixtures"></div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="results-section">
+    <div class="section-title">
+      <h2>Completed Match Results</h2>
+      <p>Latest finished matches shown first</p>
+    </div>
+
+    <div class="fixtures-grid" id="completedMatches"></div>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal" id="matchModal">
+    <div class="modal-box">
+      <button class="close-btn" id="closeModal">&times;</button>
+
+      <div class="match-header" id="matchHeader"></div>
+
+      <div class="details-grid">
+        <div class="details-card">
+          <h3>Match Statistics</h3>
+          <div id="statsContainer"></div>
+        </div>
+
+        <div class="details-card">
+          <h3>Goal Scorers</h3>
+          <div id="scorersContainer"></div>
+        </div>
+
+        <div class="details-card">
+          <h3>Player Ratings</h3>
+          <div id="ratingsContainer"></div>
+        </div>
+
+        <div class="details-card">
+          <h3>Match Info</h3>
+          <div id="infoContainer"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>Jamasi 1 Zongo Youth Sala Gala</h3>
+        <p>Official tournament demo platform</p>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p>Email: info@jamasisalagala.com</p>
+        <p>Phone: +233 000 000 000</p>
+      </div>
+
+      <div>
+        <h4>Follow</h4>
+        <p>Facebook</p>
+        <p>TikTok</p>
+        <p>Instagram</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Jamasi 1 Zongo Youth Sala Gala. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./fixtures.js"></script>
+</body>
+</html>

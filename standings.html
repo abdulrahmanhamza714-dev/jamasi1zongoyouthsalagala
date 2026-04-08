@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Standings | Jamasi 1 Zongo Youth Sala Gala</title>
+  <link rel="stylesheet" href="./standings.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-area">
+      <div class="logo-circle">🏆</div>
+      <div>
+        <h1>Jamasi 1 Zongo Youth Sala Gala</h1>
+        <p class="tagline">Forge Your Victory</p>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <a href="./index.html">Home</a>
+      <a href="./teams.html">Teams</a>
+      <a href="./fixtures.html">Fixtures</a>
+      <a href="./standings.html" class="active">Standings</a>
+      <a href="./sponsers.html">Sponsors</a>
+      <a href="./admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="standings-hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge">Tournament Table</span>
+      <h2>Standings & Knockout Path</h2>
+      <p>Track group rankings, qualification spots, and the road to the final.</p>
+    </div>
+  </section>
+
+  <!-- FORMAT NOTICE -->
+  <section class="rules-section">
+    <div class="section-title">
+      <h2>Tournament Qualification Rules</h2>
+      <p>Important structure of the competition</p>
+    </div>
+
+    <div class="rules-grid">
+      <div class="rule-card">
+        <h3>Group A</h3>
+        <p>3 Teams</p>
+        <span>Top 2 qualify</span>
+      </div>
+
+      <div class="rule-card">
+        <h3>Group B</h3>
+        <p>3 Teams</p>
+        <span>Top 2 qualify</span>
+      </div>
+
+      <div class="rule-card">
+        <h3>Group C</h3>
+        <p>4 Teams</p>
+        <span>Top 3 qualify</span>
+      </div>
+
+      <div class="rule-card special">
+        <h3>Special Qualification</h3>
+        <p>Best loser from A/B + loser from C path</p>
+        <span>Used to complete Quarter Final structure</span>
+      </div>
+
+      <div class="rule-card special">
+        <h3>Knockout Rule</h3>
+        <p>No Round of 16</p>
+        <span>Straight to Quarter Finals</span>
+      </div>
+
+      <div class="rule-card special">
+        <h3>Draw Rule</h3>
+        <p>No Extra Time</p>
+        <span>Draws go straight to penalties</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GROUP TABLES -->
+  <section class="groups-section">
+    <div class="section-title">
+      <h2>Group Standings</h2>
+      <p>Current rankings in each group</p>
+    </div>
+
+    <div class="tables-wrapper">
+      <div class="table-card">
+        <h3>Group A</h3>
+        <div id="groupA"></div>
+      </div>
+
+      <div class="table-card">
+        <h3>Group B</h3>
+        <div id="groupB"></div>
+      </div>
+
+      <div class="table-card full-width">
+        <h3>Group C</h3>
+        <div id="groupC"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEST LOSER -->
+  <section class="best-loser-section">
+    <div class="section-title">
+      <h2>Best Loser Qualification Watch</h2>
+      <p>Comparison between lower-ranked teams from Group A and B</p>
+    </div>
+
+    <div class="best-loser-card" id="bestLoserCard"></div>
+  </section>
+
+  <!-- KNOCKOUT -->
+  <section class="knockout-section">
+    <div class="section-title">
+      <h2>Knockout Bracket</h2>
+      <p>The path from quarter finals to the final</p>
+    </div>
+
+    <div class="bracket-grid">
+      <div class="bracket-column">
+        <h3>Quarter Finals</h3>
+        <div id="quarterFinals"></div>
+      </div>
+
+      <div class="bracket-column">
+        <h3>Semi Finals</h3>
+        <div id="semiFinals"></div>
+      </div>
+
+      <div class="bracket-column">
+        <h3>Final</h3>
+        <div id="finalMatch"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>Jamasi 1 Zongo Youth Sala Gala</h3>
+        <p>Official tournament demo platform</p>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p>Email: info@jamasisalagala.com</p>
+        <p>Phone: +233 000 000 000</p>
+      </div>
+
+      <div>
+        <h4>Follow</h4>
+        <p>Facebook</p>
+        <p>TikTok</p>
+        <p>Instagram</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Jamasi 1 Zongo Youth Sala Gala. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./standings.html"></script>
+</body>
+</html>

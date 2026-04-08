@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Team | Admin</title>
+  <link rel="stylesheet" href="./admin-add-team.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-area">
+      <div class="logo-circle">🏟️</div>
+      <div>
+        <h1>Jamasi 1 Zongo Youth Sala Gala</h1>
+        <p class="tagline">Admin • Add Team</p>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <a href="admin.html">Dashboard</a>
+      <a href="./admin-add-team.html" class="active">Add Team</a>
+      <a href="./admin-add-player.html">Add Player</a>
+      <a href="admin-add-fixture.html">Add Fixture</a>
+      <a href="admin-results.html">Results</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge">Tournament Team Management</span>
+      <h2>Register Teams for the Tournament</h2>
+      <p>Add teams, assign them to groups, and prepare them for fixtures and standings.</p>
+    </div>
+  </section>
+
+  <!-- FORM SECTION -->
+  <section class="form-section">
+    <div class="section-title">
+      <h2>Add New Team</h2>
+      <p>Enter official tournament team details</p>
+    </div>
+
+    <div class="form-card">
+      <form id="teamForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="teamName">Team Name</label>
+            <input type="text" id="teamName" placeholder="e.g. Zongo Stars" required />
+          </div>
+
+          <div class="form-group">
+            <label for="teamLogo">Team Logo URL</label>
+            <input type="url" id="teamLogo" placeholder="https://example.com/logo.png" required />
+          </div>
+
+          <div class="form-group">
+            <label for="teamGroup">Assign Group</label>
+            <select id="teamGroup" required>
+              <option value="">Select Group</option>
+              <option value="A">Group A</option>
+              <option value="B">Group B</option>
+              <option value="C">Group C</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="teamCoach">Coach / Manager</label>
+            <input type="text" id="teamCoach" placeholder="e.g. Coach Ibrahim" />
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="teamDescription">Team Description</label>
+          <textarea id="teamDescription" rows="5" placeholder="Short team description..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Add Team</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- REGISTERED TEAMS -->
+  <section class="teams-section">
+    <div class="section-title">
+      <h2>Registered Teams</h2>
+      <p>Teams currently added to the tournament</p>
+    </div>
+
+    <div class="teams-grid" id="teamsGrid"></div>
+  </section>
+
+  <script src="./admin-add-team.js"></script>
+</body>
+</html>

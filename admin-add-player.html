@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Player | Admin</title>
+  <link rel="stylesheet" href="./admin-add-player.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-area">
+      <div class="logo-circle">🏟️</div>
+      <div>
+        <h1>Jamasi 1 Zongo Youth Sala Gala</h1>
+        <p class="tagline">Admin • Add Player</p>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <a href="admin.html">Dashboard</a>
+      <a href="admin-add-team.html">Add Team</a>
+      <a href="admin-add-player.html" class="active">Add Player</a>
+      <a href="admin-add-fixture.html">Add Fixture</a>
+      <a href="admin-results.html">Results</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge">Tournament Player Management</span>
+      <h2>Register Players for Teams</h2>
+      <p>Add players and assign them to registered teams to prepare for fixtures and standings.</p>
+    </div>
+  </section>
+
+  <!-- FORM SECTION -->
+  <section class="form-section">
+    <div class="section-title">
+      <h2>Add New Player</h2>
+      <p>Enter player details and assign to a team</p>
+    </div>
+
+    <div class="form-card">
+      <form id="playerForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="playerName">Player Name</label>
+            <input type="text" id="playerName" placeholder="e.g. Kwame Mensah" required />
+          </div>
+
+          <div class="form-group">
+            <label for="playerImage">Player Image URL</label>
+            <input type="url" id="playerImage" placeholder="https://example.com/player.png" required />
+          </div>
+
+          <div class="form-group">
+            <label for="playerAge">Age</label>
+            <input type="number" id="playerAge" placeholder="e.g. 18" min="10" max="60" required />
+          </div>
+
+          <div class="form-group">
+            <label for="playerNumber">Jersey Number</label>
+            <input type="number" id="playerNumber" placeholder="e.g. 7" min="1" max="99" required />
+          </div>
+
+          <div class="form-group">
+            <label for="playerPosition">Position</label>
+            <select id="playerPosition" required>
+              <option value="">Select Position</option>
+              <option value="Goalkeeper">Goalkeeper</option>
+              <option value="Defender">Defender</option>
+              <option value="Midfielder">Midfielder</option>
+              <option value="Forward">Forward</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="playerTeam">Assign Team</label>
+            <select id="playerTeam" required>
+              <option value="">Select Team</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="playerCaptain">Captain</label>
+            <select id="playerCaptain" required>
+              <option value="No">No</option>
+              <option value="Yes">Yes</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="playerDescription">Player Description</label>
+          <textarea id="playerDescription" rows="4" placeholder="Short description..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Add Player</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- REGISTERED PLAYERS -->
+  <section class="players-section">
+    <div class="section-title">
+      <h2>Registered Players</h2>
+      <p>Players currently added to teams</p>
+    </div>
+
+    <div class="players-grid" id="playersGrid"></div>
+  </section>
+
+  <script src="./admin-add-player.js"></script>
+</body>
+</html>

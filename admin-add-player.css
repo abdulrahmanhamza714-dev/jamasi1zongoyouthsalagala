@@ -1,0 +1,209 @@
+/* =========================
+   Responsive Admin Add Player CSS
+========================= */
+
+/* RESET & BODY (same as before) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0b0f1f;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  background: #0c1223;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-wrap: wrap;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-circle {
+  width: 45px;
+  height: 45px;
+  background: #facc15;
+  color: #0b0f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.logo-area h1 {
+  font-size: 18px;
+}
+
+.tagline {
+  font-size: 11px;
+  color: #f3f4f6;
+}
+
+.navbar a {
+  color: #f3f4f6;
+  margin-left: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #facc15;
+}
+
+/* HERO SECTION */
+.hero-section {
+  padding: 50px 24px;
+  text-align: center;
+}
+
+.hero-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  color: #b8c7e6;
+  font-size: 15px;
+}
+
+/* FORM SECTION */
+.form-section {
+  padding: 30px 24px;
+}
+
+.section-title h2 {
+  font-size: 24px;
+}
+
+.section-title p {
+  font-size: 13px;
+}
+
+/* FORM CARD */
+.form-card {
+  padding: 24px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-size: 13px;
+  padding: 8px 12px;
+}
+
+.submit-btn {
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+/* PLAYERS SECTION */
+.players-section {
+  padding: 30px 24px;
+}
+
+.players-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
+}
+
+.player-card {
+  border-radius: 18px;
+}
+
+.player-image {
+  height: 180px;
+}
+
+.player-content h3 {
+  font-size: 18px;
+}
+
+.player-content p {
+  font-size: 13px;
+}
+
+/* =========================
+   MEDIA QUERIES
+========================= */
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .hero-section h2 {
+    font-size: 30px;
+  }
+
+  .form-card {
+    padding: 28px;
+  }
+
+  .player-image {
+    height: 200px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    margin-top: 10px;
+  }
+
+  .hero-section h2 {
+    font-size: 24px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+
+  .players-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .player-image {
+    height: 160px;
+  }
+
+  .player-content h3 {
+    font-size: 16px;
+  }
+
+  .player-content p {
+    font-size: 12px;
+  }
+}

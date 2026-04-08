@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teams | Jamasi 1 Zongo Youth Sala Gala</title>
+  <link rel="stylesheet" href="./teams.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-area">
+      <div class="logo-circle">🏆</div>
+      <div>
+        <h1>Jamasi 1 Zongo Youth Sala Gala</h1>
+        <p class="tagline">Forge Your Victory</p>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <a href="./index.html">Home</a>
+      <a href="./teams.html" class="active">Teams</a>
+      <a href="./fixtures.html">Fixtures</a>
+      <a href="./standings.html">Standings</a>
+      <a href="./sponsers.html">Sponsors</a>
+      <a href="./admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="teams-hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge">Registered Tournament Clubs</span>
+      <h2>Explore Every Team</h2>
+      <p>Click any team to view its registered squad, captain, and player details.</p>
+    </div>
+  </section>
+
+  <!-- TEAMS -->
+  <section class="teams-section">
+    <div class="section-title">
+      <h2>Participating Teams</h2>
+      <p>All clubs in Groups A, B and C</p>
+    </div>
+
+    <div class="teams-grid" id="teamsGrid"></div>
+  </section>
+
+  <!-- TEAM MODAL -->
+  <div class="modal" id="teamModal">
+    <div class="modal-box">
+      <button class="close-btn" id="closeModal">&times;</button>
+
+      <div class="team-modal-header" id="teamModalHeader"></div>
+
+      <div class="players-section">
+        <h3>Registered Players</h3>
+        <div class="players-grid" id="playersGrid"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>Jamasi 1 Zongo Youth Sala Gala</h3>
+        <p>Official tournament demo platform</p>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p>Email: info@jamasisalagala.com</p>
+        <p>Phone: +233 000 000 000</p>
+      </div>
+
+      <div>
+        <h4>Follow</h4>
+        <p>Facebook</p>
+        <p>TikTok</p>
+        <p>Instagram</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Jamasi 1 Zongo Youth Sala Gala. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./teams.js"></script>
+</body>
+</html>
